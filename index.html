@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1 TypeScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <script type="module" src="./scripts/course.js"></script>
+    <script type="module" src="./scripts/dataCourses.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/Student.js"></script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Gustavo Adolfo Tabima Luque</h1>
+                <img src="./avatar.png" alt="Avatar" width="50%" height="50%" class="rounded-circle">
+                <h2>Datos Personales</h2>
+                <table class="table-dark">
+                    <thead class="thead-light">
+                        <tr>
+                            <td>Código</td>
+                            <td>Cédula</td>
+                            <td>Edad</td>
+                            <td>Dirección </td>
+                            <td>Teléfono </td>
+                        </tr>
+
+
+                    </thead>
+                    <tbody id="student-table">
+                          
+                         
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <form style="margin:10px;">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                        </div>
+                        <div class="col">
+                            <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                        </div>
+                    </div>
+                </form>
+                <h2>Cursos Actuales</h2>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Curso</th>
+                            <th>Profesor</th>
+                            <th>Créditos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="courses">
+                    </tbody>
+
+                </table>
+                <h1> Creditos totales: <h1 id="total-credits"></h1>
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form style="margin:10px;">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" id="filter-box" placeholder="Credito Mayor que" width="1000px">
+                            </div>
+                            <div class="col">
+                                <button type="button" id="button-filterByRango" class="btn btn-success"> >=</button>
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
